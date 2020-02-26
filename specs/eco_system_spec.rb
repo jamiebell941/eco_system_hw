@@ -9,7 +9,7 @@ require_relative("../river")
 class EcoSystemTest < MiniTest::Test
 
   def setup
-    @bear1 = Bear.new("Baloo")
+    @bear1 = Bear.new("Bear Grills")
 
     @fish1 = Fish.new("Alex Salmon")
     @fish2 = Fish.new("Tuna Turner")
@@ -34,7 +34,7 @@ class EcoSystemTest < MiniTest::Test
   end
 
   def test_bear_has_name
-    assert_equal("Baloo", @bear1.bear_name)
+    assert_equal("Bear Grills", @bear1.bear_name)
   end
 
   # def test_bear_stomach_empty
